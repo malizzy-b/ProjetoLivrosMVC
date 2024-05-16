@@ -83,7 +83,58 @@ public class MenuInterface implements Initializable {
                 Logger.getLogger(MenuInterface.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
+        
+        inserirL.setOnAction((ActionEvent event) -> {
+            FXMLLoader loader = new FXMLLoader(ProjetoFX.class.getResource("/br/com/fatec/xmls/InserirLivrosInterface.fxml"));
+            Parent novatela = null;
+            try {
+                novatela = loader.load();
+                Stage stg = ProjetoFX.getStage();
+                stg.setScene(new Scene(novatela));
+                stg.show();
+            } catch (IOException ex) {
+                Logger.getLogger(MenuInterface.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
 
+        listarL.setOnAction((ActionEvent event) -> {
+            FXMLLoader loader = new FXMLLoader(ProjetoFX.class.getResource("/br/com/fatec/xmls/ConsultarLivrosInterface.fxml"));
+            Parent novatela = null;
+            try {
+                novatela = loader.load();
+                Stage stg = ProjetoFX.getStage();
+                stg.setScene(new Scene(novatela));
+                stg.show();
+            } catch (IOException ex) {
+                Logger.getLogger(MenuInterface.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
+        
+        inserirUL.setOnAction((ActionEvent event) -> {
+            FXMLLoader loader = new FXMLLoader(ProjetoFX.class.getResource("/br/com/fatec/xmls/InserirRelacaoInterface.fxml"));
+            Parent novatela = null;
+            try {
+                novatela = loader.load();
+                Stage stg = ProjetoFX.getStage();
+                stg.setScene(new Scene(novatela));
+                stg.show();
+            } catch (IOException ex) {
+                Logger.getLogger(MenuInterface.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
+
+        listarUL.setOnAction((ActionEvent event) -> {
+            FXMLLoader loader = new FXMLLoader(ProjetoFX.class.getResource("/br/com/fatec/xmls/ConsultarRelacaoInterface.fxml"));
+            Parent novatela = null;
+            try {
+                novatela = loader.load();
+                Stage stg = ProjetoFX.getStage();
+                stg.setScene(new Scene(novatela));
+                stg.show();
+            } catch (IOException ex) {
+                Logger.getLogger(MenuInterface.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        });
 
     }
 

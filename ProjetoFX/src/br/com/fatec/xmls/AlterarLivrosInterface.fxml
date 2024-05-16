@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.telas.AlterarLivrosInterface">
+   <children>
+      <Button fx:id="btSalvar" layoutX="249.0" layoutY="338.0" mnemonicParsing="false" text="Salvar" />
+      <Label fx:id="lbTitulo" layoutX="118.0" layoutY="123.0" text="Título" />
+      <TextField fx:id="txtTitulo" layoutX="118.0" layoutY="140.0" maxWidth="1000.0" prefHeight="25.0" prefWidth="324.0" />
+      <Label fx:id="lbISBN" layoutX="118.0" layoutY="165.0" text="ISBN" />
+      <TextField fx:id="txtISBN" layoutX="118.0" layoutY="182.0" maxWidth="1000.0" prefHeight="25.0" prefWidth="324.0" />
+      <Label fx:id="lbGenero" layoutX="118.0" layoutY="207.0" text="Gênero" />
+      <TextField fx:id="txtGenero" layoutX="118.0" layoutY="224.0" maxWidth="1000.0" prefHeight="25.0" prefWidth="324.0" />
+      <Label fx:id="lbDataLancamento" layoutX="118.0" layoutY="249.0" text="Data de Lançamento" />
+      <TextField fx:id="txtDataLancamento" layoutX="118.0" layoutY="266.0" maxWidth="1000.0" prefHeight="25.0" prefWidth="324.0" />
+      <Button fx:id="btVoltar" layoutX="35.0" layoutY="38.0" mnemonicParsing="false" text="Voltar" />
+   </children>
+</AnchorPane>

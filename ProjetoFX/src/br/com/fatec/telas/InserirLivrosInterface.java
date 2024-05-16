@@ -65,13 +65,13 @@ public class InserirLivrosInterface implements Initializable {
     private TextField txtGenero;
 
     @FXML
-    private TextField txtData_lancamento;
+    private TextField txtDataLancamento;
 
     @FXML
-    private TextField txtData_emprestimo;
+    private TextField txtDataEmprestimo;
 
     @FXML
-    private TextField txtData_devolucao;
+    private TextField txtDataDevolucao;
 
     ControllerLivros livrosCont = null;
 
@@ -85,11 +85,11 @@ public class InserirLivrosInterface implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 livrosCont = new ControllerLivros();
-                String data_lancamento = txtData_lancamento.getText();
-                String data_emprestimo = txtData_emprestimo.getText();
-                String data_devolucao = txtData_devolucao.getText();
+                String dataLancamento = txtDataLancamento.getText();
+                String dataEmprestimo = txtDataEmprestimo.getText();
+                String dataDevolucao = txtDataDevolucao.getText();
 
-                Livros livro = new Livros(txtTitulo.getText(), txtISBN.getText(), txtGenero.getText(), data_lancamento, data_emprestimo, data_devolucao);
+                Livros livro = new Livros(txtTitulo.getText(), txtISBN.getText(), txtGenero.getText(), dataLancamento, dataEmprestimo, dataDevolucao);
                 try {
                     livro = (Livros) livrosCont.inserir(livro);
                 } catch (SQLException | ClassNotFoundException ex) {

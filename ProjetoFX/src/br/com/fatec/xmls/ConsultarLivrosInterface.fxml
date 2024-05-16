@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.telas.ConsultarLivrosInterface">
+   <children>
+      <Label fx:id="lbTitulo" layoutX="14.0" layoutY="14.0" text="Livro" />
+      <TextField fx:id="txtTitulo" layoutX="14.0" layoutY="41.0" prefHeight="25.0" prefWidth="273.0" />
+      <Button fx:id="btConsultar" layoutX="287.0" layoutY="41.0" mnemonicParsing="false" text="Consultar" />
+      <TableView fx:id="listaLivros" layoutX="14.0" layoutY="78.0" prefHeight="277.0" prefWidth="536.0">
+        <columns>
+            <TableColumn fx:id="tTitulo" prefWidth="98.0" text="Título" />
+            <TableColumn fx:id="tISBN" prefWidth="104.0" text="ISBN" />
+            <TableColumn fx:id="tGenero" maxWidth="147.0" minWidth="-1.0" prefWidth="139.0" text="Gênero" />
+            <TableColumn fx:id="tDataLancamento" maxWidth="237.0" minWidth="-1.0" prefWidth="194.0" text="Data de Lançamento" />
+        </columns>
+      </TableView>
+      <Button fx:id="btAlterar" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Alterar" />
+      <Button fx:id="btExcluir" layoutX="66.0" layoutY="361.0" mnemonicParsing="false" text="Excluir" />
+      <Button fx:id="btVoltar" layoutX="116.0" layoutY="361.0" mnemonicParsing="false" text="Voltar" />
+   </children>
+</AnchorPane>
